@@ -1,5 +1,6 @@
-import 'dart:io' as io;
+import 'dart:io';
 
+import '../../../http/http.dart' as io;
 import '../enums/socket_status_type.dart';
 import '../models/socket_optional_params.dart';
 import 'platform_websocket.dart';
@@ -28,7 +29,7 @@ class PlatformWebsocketIo implements IPlatformWebsocket {
     _webSocket = null;
     await Future<void>.delayed(Duration.zero);
     var connectUrl = url;
-    if (io.Platform.isAndroid) {
+    if (Platform.isAndroid) {
       connectUrl = connectUrl.replaceAll('127.0.0.1', '10.0.2.2');
     }
     _webSocket = await io.WebSocket.connect(
@@ -60,8 +61,7 @@ class PlatformWebsocketIo implements IPlatformWebsocket {
   }
 
   @override
-  String get platformStatus =>
-      '[$_platform Platform status: ${_socketStatus()} ]';
+  String get platformStatus => '[$_platform Platform status: ${_socketStatus()} ]';
 
   String _socketStatus() {
     if (_webSocket == null) {

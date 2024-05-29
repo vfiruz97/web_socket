@@ -1,4 +1,4 @@
-name: websocket_universal
+name: websocket_universal_x
 description: |
   Convenient websocket handler for all platforms (both IO and web/HTML).
   Websocket messages routing, statuses and other features have easy-to-use
