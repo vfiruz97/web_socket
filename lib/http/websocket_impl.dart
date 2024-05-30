@@ -329,7 +329,6 @@ class _WebSocketProtocolTransformer
       switch (_currentMessageType) {
         case _WebSocketMessageType.TEXT:
           _eventSink!.add(utf8.decode(bytes));
-          // _eventSink!.add('utf8.decode(bytes)');
           break;
         case _WebSocketMessageType.BINARY:
           _eventSink!.add(bytes);
