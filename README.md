@@ -4,13 +4,13 @@
 This code was forked from [websocket_universal](https://pub.dev/packages/websocket_universal) Dart/Flutter package. In this project `the lib/http` folder was cloned from `Dart SDK` accordingly and changed due to this [GitHub issue response](https://github.com/dart-lang/sdk/issues/55810#issuecomment-2137140851). And also did replaced `the http from SDK` with customised `lib/http` in some `websocket_universal` files. All this because the hand-coded backend at work which fails to receive frame from Dart WebSocket Client.
 
 ## TAG
- - last tag: 1.0.0
+ - last tag: 1.0.1
 
  ```bash
   git commit -m 'comment-name'
   git push origin master
 
-  git tag 1.0.0
+  git tag 1.0.1
   git push --tags
  ```
 
