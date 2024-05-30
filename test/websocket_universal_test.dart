@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:websocket_universal/websocket_universal.dart';
+import 'package:websocket_universal_x/websocket_universal.dart';
 
 void main() {
   group('SocketMessageProcessor', () {
