@@ -7,6 +7,9 @@ This code was forked from [websocket_universal](https://pub.dev/packages/websock
  - last tag: 1.0.0
 
  ```bash
+  git commit -m 'comment-name'
+  git push origin master
+
   git tag 1.0.0
   git push --tags
  ```
