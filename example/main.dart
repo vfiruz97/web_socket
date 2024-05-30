@@ -1,4 +1,4 @@
-import 'package:websocket_universal/websocket_universal.dart';
+import 'package:websocket_universal_x/websocket_universal.dart';
 
 /// Example for custom Ping/Pong messages
 /// IMessageProcessor that sends to and

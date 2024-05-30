@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:websocket_universal/websocket_universal.dart';
+import 'package:websocket_universal_x/websocket_universal.dart';
 
 void main() async {
   /// Postman echo ws server (you can use your own server URI)
